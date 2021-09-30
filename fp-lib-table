@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Apple_ii_card)(type KiCad)(uri ${KIPRJMOD}/Apple_ii_card.pretty)(options "")(descr ""))
+)
