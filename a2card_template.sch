@@ -469,4 +469,71 @@ Text Label 7525 2725 0    50   ~ 0
 d6'
 Text Label 7525 2825 0    50   ~ 0
 d7'
+$Comp
+L Switch:SW_DIP_x04 S1
+U 1 1 61569342
+P 9975 1425
+F 0 "S1" H 9975 1892 50  0000 C CNN
+F 1 "SW_DIP_x04" H 9975 1801 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 9975 1425 50  0001 C CNN
+F 3 "~" H 9975 1425 50  0001 C CNN
+	1    9975 1425
+	-1   0    0    -1  
+$EndComp
+Text Label 9675 1425 2    50   ~ 0
+~NMI
+Text Label 10850 1425 0    50   ~ 0
+~Z80_NMI
+Text Label 7725 3175 0    50   ~ 0
+~Z80_NMI
+Wire Wire Line
+	7725 3175 7525 3175
+Text Label 925  2225 2    50   ~ 0
+~NMI
+$Comp
+L Device:R_Network04_US RN9
+U 1 1 6156C017
+P 10600 925
+F 0 "RN9" H 10788 971 50  0000 L CNN
+F 1 "10kΩ" H 10788 880 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 10875 925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 10600 925 50  0001 C CNN
+	1    10600 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 6156D36C
+P 10400 725
+F 0 "#PWR0113" H 10400 575 50  0001 C CNN
+F 1 "+5V" H 10415 898 50  0000 C CNN
+F 2 "" H 10400 725 50  0001 C CNN
+F 3 "" H 10400 725 50  0001 C CNN
+	1    10400 725 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10275 1425 10600 1425
+Text Label 9675 1525 2    50   ~ 0
+~IRQ
+Text Label 10850 1525 0    50   ~ 0
+~Z80_IRQ
+Wire Wire Line
+	10850 1525 10700 1525
+Wire Wire Line
+	10700 1125 10700 1525
+Connection ~ 10700 1525
+Wire Wire Line
+	10700 1525 10275 1525
+Wire Wire Line
+	10600 1125 10600 1425
+Connection ~ 10600 1425
+Wire Wire Line
+	10600 1425 10850 1425
+Text Label 925  2425 2    50   ~ 0
+~IRQ
+Text Label 7725 3075 0    50   ~ 0
+~Z80_IRQ
+Wire Wire Line
+	7725 3075 7525 3075
 $EndSCHEMATC
