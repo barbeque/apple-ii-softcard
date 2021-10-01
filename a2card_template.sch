@@ -375,4 +375,98 @@ Text Label 925  5025 2    50   ~ 0
 d6
 Text Label 925  4825 2    50   ~ 0
 d7
+$Comp
+L 74xx:74LS373 U1
+U 1 1 6158A69D
+P 10375 5150
+F 0 "U1" H 10375 6131 50  0000 C CNN
+F 1 "74LS373" H 10375 6040 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 10375 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 10375 5150 50  0001 C CNN
+F 4 "296-1660-5-ND‎" H 10375 5150 50  0001 C CNN "DigiKey"
+	1    10375 5150
+	-1   0    0    -1  
+$EndComp
+Text Label 10875 4750 0    50   ~ 0
+d0
+Text Label 10875 4650 0    50   ~ 0
+d1
+Text Label 10875 4850 0    50   ~ 0
+d7
+Text Label 10875 4950 0    50   ~ 0
+d2
+Text Label 10875 5050 0    50   ~ 0
+d6
+Text Label 10875 5150 0    50   ~ 0
+d5
+Text Label 10875 5250 0    50   ~ 0
+d3
+Text Label 10875 5350 0    50   ~ 0
+d4
+Text Notes 8450 6450 0    50   ~ 0
+TODO: Don't be afraid to reorder these so they make an easier route
+$Comp
+L power:GND #PWR0111
+U 1 1 6158F491
+P 10375 5950
+F 0 "#PWR0111" H 10375 5700 50  0001 C CNN
+F 1 "GND" H 10380 5777 50  0000 C CNN
+F 2 "" H 10375 5950 50  0001 C CNN
+F 3 "" H 10375 5950 50  0001 C CNN
+	1    10375 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 6158FC8D
+P 10600 4350
+F 0 "#PWR0112" H 10600 4200 50  0001 C CNN
+F 1 "+5V" H 10615 4523 50  0000 C CNN
+F 2 "" H 10600 4350 50  0001 C CNN
+F 3 "" H 10600 4350 50  0001 C CNN
+	1    10600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4350 10375 4350
+Text Label 10875 5550 0    50   ~ 0
+ø0
+Text Label 925  4425 2    50   ~ 0
+ø0
+Text Label 10875 5650 0    50   ~ 0
+~RD
+Text Label 7525 3575 0    50   ~ 0
+~RD
+Text Label 9875 4650 2    50   ~ 0
+d1'
+Text Label 9875 4750 2    50   ~ 0
+d0'
+Text Label 9875 4850 2    50   ~ 0
+d7'
+Text Label 9875 4950 2    50   ~ 0
+d2'
+Text Label 9875 5050 2    50   ~ 0
+d6'
+Text Label 9875 5150 2    50   ~ 0
+d5'
+Text Label 9875 5250 2    50   ~ 0
+d3'
+Text Label 9875 5350 2    50   ~ 0
+d4'
+Text Label 7525 2125 0    50   ~ 0
+d0'
+Text Label 7525 2225 0    50   ~ 0
+d1'
+Text Label 7525 2325 0    50   ~ 0
+d2'
+Text Label 7525 2425 0    50   ~ 0
+d3'
+Text Label 7525 2525 0    50   ~ 0
+d4'
+Text Label 7525 2625 0    50   ~ 0
+d5'
+Text Label 7525 2725 0    50   ~ 0
+d6'
+Text Label 7525 2825 0    50   ~ 0
+d7'
 $EndSCHEMATC
