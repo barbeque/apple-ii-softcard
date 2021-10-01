@@ -536,4 +536,148 @@ Text Label 7725 3075 0    50   ~ 0
 ~Z80_IRQ
 Wire Wire Line
 	7725 3075 7525 3075
+Text Label 2525 2025 0    50   ~ 0
+INT_IN_OUT
+Text Label 925  2025 2    50   ~ 0
+INT_IN_OUT
+$Comp
+L 74xx:74LS367 U9
+U 1 1 6157726E
+P 10275 2550
+F 0 "U9" H 10275 3431 50  0000 C CNN
+F 1 "74LS367" H 10275 3340 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 10275 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS367" H 10275 2550 50  0001 C CNN
+F 4 "296-3701-5-ND‎" H 10275 2550 50  0001 C CNN "DigiKey"
+	1    10275 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 615799C2
+P 10525 1850
+F 0 "#PWR0114" H 10525 1700 50  0001 C CNN
+F 1 "+5V" H 10540 2023 50  0000 C CNN
+F 2 "" H 10525 1850 50  0001 C CNN
+F 3 "" H 10525 1850 50  0001 C CNN
+	1    10525 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10525 1850 10275 1850
+$Comp
+L power:GND #PWR0115
+U 1 1 6157A62A
+P 10275 3250
+F 0 "#PWR0115" H 10275 3000 50  0001 C CNN
+F 1 "GND" H 10280 3077 50  0000 C CNN
+F 2 "" H 10275 3250 50  0001 C CNN
+F 3 "" H 10275 3250 50  0001 C CNN
+	1    10275 3250
+	1    0    0    -1  
+$EndComp
+Text Label 10775 2450 0    50   ~ 0
+d7
+Text Label 10775 2350 0    50   ~ 0
+d6
+Text Label 10775 2250 0    50   ~ 0
+d5
+Text Label 10775 2150 0    50   ~ 0
+d4
+Text Label 9775 2450 2    50   ~ 0
+d7'
+Text Label 9775 2350 2    50   ~ 0
+d6'
+Text Label 9775 2250 2    50   ~ 0
+d5'
+Text Label 9775 2150 2    50   ~ 0
+d4'
+$Comp
+L Device:R_Network08_US R13
+U 1 1 6157F8C6
+P 8250 1750
+F 0 "R13" H 8638 1796 50  0000 L CNN
+F 1 "10kΩ" H 8638 1705 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 8725 1750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8250 1750 50  0001 C CNN
+	1    8250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 61580C5A
+P 7850 1550
+F 0 "#PWR0116" H 7850 1400 50  0001 C CNN
+F 1 "+5V" H 7865 1723 50  0000 C CNN
+F 2 "" H 7850 1550 50  0001 C CNN
+F 3 "" H 7850 1550 50  0001 C CNN
+	1    7850 1550
+	1    0    0    -1  
+$EndComp
+Text Label 8450 1950 3    50   ~ 0
+d7'
+Text Label 8350 1950 3    50   ~ 0
+d5'
+Text Label 8250 1950 3    50   ~ 0
+d0'
+Text Label 8150 1950 3    50   ~ 0
+d3'
+Wire Wire Line
+	8050 1950 8050 3975
+Wire Wire Line
+	8050 3975 7525 3975
+Text Label 7950 1950 3    50   ~ 0
+d1'
+Text Label 7850 1950 3    50   ~ 0
+d4'
+Text Label 8050 1950 3    50   ~ 0
+~BUSRQ
+Text Notes 9625 2650 2    50   ~ 0
+TODO: ø1
+Text Notes 9625 2550 2    50   ~ 0
+TODO: 7M
+Text Label 925  3625 2    50   ~ 0
+7M
+$Comp
+L power:GND #PWR0117
+U 1 1 6158CDE9
+P 9775 3050
+F 0 "#PWR0117" H 9775 2800 50  0001 C CNN
+F 1 "GND" H 9780 2877 50  0000 C CNN
+F 2 "" H 9775 3050 50  0001 C CNN
+F 3 "" H 9775 3050 50  0001 C CNN
+	1    9775 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9775 3050 9775 2950
+Text Notes 9625 2850 2    50   ~ 0
+TODO: U3
+Text Label 925  1825 2    50   ~ 0
+DMA_IN
+Text Label 9425 1325 2    50   ~ 0
+DMA_IN
+Text Label 10850 1325 0    50   ~ 0
+~BUSRQ
+Wire Wire Line
+	10275 1325 10850 1325
+Wire Wire Line
+	9675 1325 9425 1325
+Wire Wire Line
+	10500 1125 10500 1175
+Wire Wire Line
+	10500 1175 10225 1175
+Wire Wire Line
+	10225 1175 10225 850 
+Wire Wire Line
+	10225 850  9575 850 
+Wire Wire Line
+	9575 850  9575 1275
+Wire Wire Line
+	9575 1275 9675 1275
+Wire Wire Line
+	9675 1275 9675 1325
+Connection ~ 9675 1325
+Text Label 8550 1950 3    50   ~ 0
+d6'
 $EndSCHEMATC
