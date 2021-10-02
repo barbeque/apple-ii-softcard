@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 23)
-    (tracks 0)
+    (tracks 8)
     (zones 0)
     (modules 10)
     (nets 106)
@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 1)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (user_trace_width 2)
@@ -1294,6 +1294,15 @@
   (gr_line (start 228.3 56.6) (end 228.3 125.4) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 69.5 56.6) (end 228.3 56.6) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 69.5 125.4) (end 69.5 56.6) (layer Edge.Cuts) (width 0.15))
+
+  (segment (start 207.293 114.173) (end 194.42537 114.173) (width 1) (layer B.Cu) (net 28))
+  (segment (start 194.42537 114.173) (end 193.294 114.173) (width 1) (layer B.Cu) (net 28))
+  (segment (start 216.22 123.1) (end 207.293 114.173) (width 1) (layer B.Cu) (net 28))
+  (segment (start 216.22 127.91) (end 216.22 123.1) (width 1) (layer B.Cu) (net 28))
+  (segment (start 216.22 123.1) (end 204.372 111.252) (width 1) (layer F.Cu) (net 29))
+  (segment (start 216.22 127.91) (end 216.22 123.1) (width 1) (layer F.Cu) (net 29))
+  (segment (start 180.213 111.252) (end 175.514 106.553) (width 1) (layer F.Cu) (net 29))
+  (segment (start 204.372 111.252) (end 180.213 111.252) (width 1) (layer F.Cu) (net 29))
 
   (zone (net 29) (net_name +5V) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
