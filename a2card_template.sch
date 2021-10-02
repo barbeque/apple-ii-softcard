@@ -680,4 +680,170 @@ Wire Wire Line
 Connection ~ 9675 1325
 Text Label 8550 1950 3    50   ~ 0
 d6'
+Text Label 2525 6425 0    50   ~ 0
+~IOSEL
+Text Label 2525 3025 0    50   ~ 0
+R~W
+Text Label 1025 7100 2    50   ~ 0
+~IOSEL
+Text Label 1025 7300 2    50   ~ 0
+R~W
+$Comp
+L 74xx:74LS32 U3
+U 1 1 615868BF
+P 1325 7200
+F 0 "U3" H 1325 7525 50  0000 C CNN
+F 1 "74LS32" H 1325 7434 50  0000 C CNN
+F 2 "" H 1325 7200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1325 7200 50  0001 C CNN
+	1    1325 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U5
+U 1 1 6158ADF5
+P 2125 7300
+F 0 "U5" H 2125 7781 50  0000 C CNN
+F 1 "74LS74" H 2125 7690 50  0000 C CNN
+F 2 "" H 2125 7300 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 2125 7300 50  0001 C CNN
+	1    2125 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 7200 1725 7200
+Wire Wire Line
+	1725 7200 1725 7300
+Wire Wire Line
+	1725 7300 1825 7300
+$Comp
+L Device:LED D?
+U 1 1 6158DEE0
+P 625 7275
+F 0 "D?" V 664 7158 50  0000 R CNN
+F 1 "LED" V 573 7158 50  0000 R CNN
+F 2 "" H 625 7275 50  0001 C CNN
+F 3 "~" H 625 7275 50  0001 C CNN
+	1    625  7275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6158FB15
+P 625 7525
+F 0 "R?" H 693 7571 50  0000 L CNN
+F 1 "680Ω" H 693 7480 50  0000 L CNN
+F 2 "" H 625 7525 50  0001 C CNN
+F 3 "~" H 625 7525 50  0001 C CNN
+	1    625  7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 615905F5
+P 625 7125
+F 0 "#PWR?" H 625 6975 50  0001 C CNN
+F 1 "+5V" H 640 7298 50  0000 C CNN
+F 2 "" H 625 7125 50  0001 C CNN
+F 3 "" H 625 7125 50  0001 C CNN
+	1    625  7125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 7200 1825 7200
+$Comp
+L 74xx:74LS74 U5
+U 2 1 615927B0
+P 2925 7300
+F 0 "U5" H 2925 7781 50  0000 C CNN
+F 1 "74LS74" H 2925 7690 50  0000 C CNN
+F 2 "" H 2925 7300 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 2925 7300 50  0001 C CNN
+	2    2925 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 7200 2525 7200
+Wire Wire Line
+	2525 7200 2525 7600
+Wire Wire Line
+	2525 7600 2925 7600
+Connection ~ 2525 7200
+Wire Wire Line
+	2525 7200 2425 7200
+Wire Wire Line
+	2925 7000 2125 7000
+Connection ~ 2125 7000
+$Comp
+L Device:R_Small_US R1
+U 1 1 615970D2
+P 1675 6900
+F 0 "R1" H 1743 6946 50  0000 L CNN
+F 1 "2.2k" H 1743 6855 50  0000 L CNN
+F 2 "" H 1675 6900 50  0001 C CNN
+F 3 "~" H 1675 6900 50  0001 C CNN
+	1    1675 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 7000 2125 7000
+$Comp
+L power:+5V #PWR?
+U 1 1 61599033
+P 1675 6800
+F 0 "#PWR?" H 1675 6650 50  0001 C CNN
+F 1 "+5V" H 1690 6973 50  0000 C CNN
+F 2 "" H 1675 6800 50  0001 C CNN
+F 3 "" H 1675 6800 50  0001 C CNN
+	1    1675 6800
+	1    0    0    -1  
+$EndComp
+Text Label 1975 7000 1    50   ~ 0
+PUP
+Wire Wire Line
+	625  7625 625  7700
+Wire Wire Line
+	625  7700 1775 7700
+Wire Wire Line
+	2425 7700 2425 7400
+Wire Wire Line
+	1775 7200 1775 7700
+Connection ~ 1775 7700
+Wire Wire Line
+	1775 7700 2425 7700
+Text Label 925  2625 2    50   ~ 0
+~RESET
+$Comp
+L 74xx:74LS74 U6
+U 1 1 615A74E8
+P 1150 9325
+F 0 "U6" H 1150 9806 50  0000 C CNN
+F 1 "74LS74" H 1150 9715 50  0000 C CNN
+F 2 "" H 1150 9325 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 1150 9325 50  0001 C CNN
+	1    1150 9325
+	1    0    0    -1  
+$EndComp
+Text Label 850  8875 2    50   ~ 0
+PUP
+Wire Wire Line
+	850  8875 850  9025
+Wire Wire Line
+	850  9025 1150 9025
+Text Label 850  9225 2    50   ~ 0
+~RESET
+Text Label 1450 9225 0    50   ~ 0
+~Z80_RESET
+Text Label 7525 4075 0    50   ~ 0
+~Z80_RESET
+Text Label 1150 9625 3    50   ~ 0
+PUP
+NoConn ~ 1450 9425
+Text Label 3225 7200 0    50   ~ 0
+~Z80_WAIT
+Text Label 7525 3875 0    50   ~ 0
+~Z80_WAIT
+NoConn ~ 3225 7400
+Text Notes 2525 7750 0    50   ~ 0
+TODO: Clock stuff into pin 11
 $EndSCHEMATC
