@@ -327,18 +327,10 @@ Wire Wire Line
 	6175 4050 6175 3975
 Wire Wire Line
 	6175 3975 6525 3975
-Text Label 4500 1375 0    50   ~ 0
-a12'
-Text Label 4500 1475 0    50   ~ 0
-a15'
 Text Label 4500 1575 0    50   ~ 0
 a10'
 Text Label 4500 1675 0    50   ~ 0
 a11'
-Text Label 4500 1775 0    50   ~ 0
-a14'
-Text Label 4500 1875 0    50   ~ 0
-a13'
 Text Label 4500 3275 0    50   ~ 0
 a4'
 Text Label 4500 3675 0    50   ~ 0
@@ -969,4 +961,118 @@ Wire Wire Line
 Wire Wire Line
 	8725 4175 8825 4175
 Connection ~ 2425 7700
+$Comp
+L 74xx:74LS283 U8
+U 1 1 615A22FB
+P 5650 1800
+F 0 "U8" H 5650 2781 50  0000 C CNN
+F 1 "74LS283" H 5650 2690 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 5650 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS283" H 5650 1800 50  0001 C CNN
+	1    5650 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1475 4900 1475
+Wire Wire Line
+	4900 1475 4900 1600
+Wire Wire Line
+	4900 1600 5150 1600
+Wire Wire Line
+	4500 1775 4975 1775
+Wire Wire Line
+	4975 1775 4975 1500
+Wire Wire Line
+	4975 1500 5150 1500
+Wire Wire Line
+	4500 1875 4950 1875
+Wire Wire Line
+	4950 1875 4950 1400
+Wire Wire Line
+	4950 1400 5150 1400
+Wire Wire Line
+	4500 1375 4925 1375
+Wire Wire Line
+	4925 1375 4925 1300
+Wire Wire Line
+	4925 1300 5150 1300
+Text Label 6150 1800 0    50   ~ 0
+a15'
+Text Label 6150 1600 0    50   ~ 0
+a13'
+$Comp
+L power:GND #PWR?
+U 1 1 615B1B1D
+P 5650 2700
+F 0 "#PWR?" H 5650 2450 50  0001 C CNN
+F 1 "GND" H 5655 2527 50  0000 C CNN
+F 2 "" H 5650 2700 50  0001 C CNN
+F 3 "" H 5650 2700 50  0001 C CNN
+	1    5650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2700 5650 2600
+Wire Wire Line
+	5650 2600 6150 2600
+Wire Wire Line
+	6150 2600 6150 2300
+Connection ~ 5650 2600
+Connection ~ 6150 2200
+Wire Wire Line
+	6150 2200 6150 2100
+Connection ~ 6150 2300
+Wire Wire Line
+	6150 2300 6150 2200
+$Comp
+L power:+5V #PWR?
+U 1 1 615B59C9
+P 5925 1000
+F 0 "#PWR?" H 5925 850 50  0001 C CNN
+F 1 "+5V" H 5940 1173 50  0000 C CNN
+F 2 "" H 5925 1000 50  0001 C CNN
+F 3 "" H 5925 1000 50  0001 C CNN
+	1    5925 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5925 1000 5650 1000
+$Comp
+L 74xx:74LS86 U7
+U 2 1 615B9A59
+P 6850 1525
+F 0 "U7" H 6850 1850 50  0000 C CNN
+F 1 "74LS86" H 6850 1759 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6850 1525 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 6850 1525 50  0001 C CNN
+	2    6850 1525
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1700 6550 1700
+Wire Wire Line
+	6550 1700 6550 1525
+Text Label 7150 1625 0    50   ~ 0
+a14'
+$Comp
+L 74xx:74LS86 U7
+U 3 1 615C2222
+P 6825 950
+F 0 "U7" H 6825 1275 50  0000 C CNN
+F 1 "74LS86" H 6825 1184 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6825 950 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 6825 950 50  0001 C CNN
+	3    6825 950 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1500 6475 1500
+Wire Wire Line
+	6475 1500 6475 950 
+Wire Wire Line
+	6475 950  6525 950 
+Text Label 7125 850  0    50   ~ 0
+a12'
+Text Notes 5350 650  0    50   ~ 0
+TODO: 7, 9, rest of U7
 $EndSCHEMATC
