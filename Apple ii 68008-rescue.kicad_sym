@@ -12,13 +12,11 @@
     (property "Datasheet" "" (at 0 0 0)
       (effects (font (size 1.524 1.524)))
     )
-    (symbol "Connector_Apple-Apple_ii_68008-cache_0_1"
-      (rectangle (start 20.32 48.26) (end 49.53 -78.74)
-        (stroke (width 0) (type solid))
-        (fill (type none))
-      )
-    )
     (symbol "Connector_Apple-Apple_ii_68008-cache_1_1"
+      (rectangle (start 22.86 48.26) (end 48.26 -78.74)
+        (stroke (width 0) (type solid))
+        (fill (type background))
+      )
       (pin output line (at 55.88 -76.2 180) (length 7.62)
         (name "~{I/O_SEL}" (effects (font (size 1.524 1.524))))
         (number "1" (effects (font (size 1.524 1.524))))
